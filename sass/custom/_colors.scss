@@ -1,0 +1,34 @@
+// Colors classes
+
+@import "custom/vars";
+
+
+$i: 5;
+@while $i <= 100 {
+    .dark-shade-#{$i} {
+        color: $TESTE-darkshade;
+        opacity: $i / 100;
+        &-bg {
+            background-color: $TESTE-darkshade;
+            opacity: $i / 100;
+        }
+    }
+    @if ($i == 5){
+        $i: $i + 20;
+    } @else {
+        $i: $i + 25;
+    }
+}
+
+// gradients
+
+.green-purple {
+    background: linear-gradient($TESTE-green, $TESTE-purple);
+    color: #FFF;
+	border-radius: 90px ;
+	-moz-border-radius: 90px;
+	-webkit-border-radius: 90px;
+	width: 17vh;
+	padding: 10px;
+    margin: 0 auto;
+}

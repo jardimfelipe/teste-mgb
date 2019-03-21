@@ -1,0 +1,44 @@
+@font-face {
+	font-family: Din;
+	src: url('#{$din-font-path}DINRound-Bl.eot');
+	src: url('#{$din-font-path}DINRound-Bl?#iefix') format('embedded-opentype'),
+		 url('#{$din-font-path}DINRound-Bl.svg') format('svg'),
+		 url('#{$din-font-path}DINRound-Bl.ttf') format('truetype');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: Din;
+	src: url('#{$din-font-path}DINRound-B.eot');
+	src: url('#{$din-font-path}DINRound-B?#iefix') format('embedded-opentype'),
+		 url('#{$din-font-path}DINRound-B.svg') format('svg'),
+		 url('#{$din-font-path}DINRound-B.ttf') format('truetype');
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: Din;
+	src: url('#{$din-font-path}DINRound-M.eot');
+	src: url('#{$din-font-path}DINRound-M?#iefix') format('embedded-opentype'),
+		 url('#{$din-font-path}DINRound-M.svg') format('svg'),
+		 url('#{$din-font-path}DINRound-M.ttf') format('truetype');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: Din;
+	src: url('#{$din-font-path}DINRound-R.eot');
+	src: url('#{$din-font-path}DINRound-R?#iefix') format('embedded-opentype'),
+		 url('#{$din-font-path}DINRound-R.svg') format('svg'),
+		 url('#{$din-font-path}DINRound-R.ttf') format('truetype');
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: Din;
+	src: url('#{$din-font-path}DINRound-Leot');
+	src: url('#{$din-font-path}DINRound-L?#iefix') format('embedded-opentype'),
+		 url('#{$din-font-path}DINRound-L.svg') format('svg'),
+		 url('#{$din-font-path}DINRound-L.ttf') format('truetype');
+	font-weight: 500;
+}

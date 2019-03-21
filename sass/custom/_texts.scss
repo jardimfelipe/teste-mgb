@@ -1,0 +1,18 @@
+@for $i from 1 through 8 {
+    .text-#{$i*8} {
+            @if $i < 3 {
+                 line-height: 24px;
+            }
+            @else if $i == 3{
+                line-height: 32px;
+            }
+            @else if $i > 4 and $i < 6 {
+                line-height: 48px;
+            }
+            @else {
+                line-height: 64px;
+            }
+  
+          font-size: 8px * $i;
+      }
+  }

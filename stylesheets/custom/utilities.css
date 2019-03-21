@@ -1,0 +1,51 @@
+/* line 1, ../../sass/custom/utilities.scss */
+body {
+  font-family: "Din", sans-serif;
+}
+
+/* line 5, ../../sass/custom/utilities.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 9, ../../sass/custom/utilities.scss */
+.list {
+  padding-bottom: 70px;
+}
+
+/* line 13, ../../sass/custom/utilities.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 17, ../../sass/custom/utilities.scss */
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* line 33, ../../sass/custom/utilities.scss */
+.font-black {
+  font-weight: 900;
+}
+
+/* line 33, ../../sass/custom/utilities.scss */
+.font-bold {
+  font-weight: 800;
+}
+
+/* line 33, ../../sass/custom/utilities.scss */
+.font-regular {
+  font-weight: 700;
+}
+
+/* line 33, ../../sass/custom/utilities.scss */
+.font-medium {
+  font-weight: 600;
+}
+
+/* line 33, ../../sass/custom/utilities.scss */
+.font-light {
+  font-weight: 500;
+}

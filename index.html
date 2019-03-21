@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--[if IE]>
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="container__row">
+                <div class="container__col-12">
+                    <h1 class="text-40 font-regular">Teste Front-End</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="form">
+        <div class="container">
+            <div class="container__row">
+                <form action="#" id="form" name="form" class="container__col-sm-12">
+                    <div class="container__row">
+                        <div class="container__col-sm-12 container__col-md-6">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" name="name" placeholder="Seu nome completo">
+                            </div>
+                        </div>
+                        <div class="container__col-sm-12 container__col-md-6">
+                            <div class="form-group">
+                                <label for="name">CPF:</label>
+                                <input type="text" oninput="cpfMask(this)" name="cpf" placeholder="___.___.___-__">
+                            </div> 
+                        </div>
+                        <div class="container__col-sm-12 container__col-md-6">
+                            <div class="form-group">
+                                <label for="name">Email:</label>
+                                <input type="email" name="email" placeholder="example@email.com">
+                            </div>
+                        </div>
+                        <div class="container__col-sm-12 container__col-md-6">
+                            <div class="form-group">
+                                <label for="name">Gênero:</label>
+                                <div class="select-style">
+                                    <select name="gender">
+                                        <option value="Masculino">MASC.</option>
+                                        <option value="Feminino">FEM.</option>
+                                        <option value="Outro">OUTRO</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container__col-sm-12 container__col-md-6">
+                            <div class="form-group">
+                                    <label for="name">Status:</label>
+                                <div class="switch__container">
+                                    <input id="switch-shadow" name="status" class="switch switch--shadow" type="checkbox">
+                                    <label for="switch-shadow">
+                                        <p>Ativo/Inativo</p>
+                                    </label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="container__col-sm-12 container__col-md-6">
+                            <div class="form-group">
+                                <label for="name">Data de Nascimento:</label>
+                                <input type="text" name="date" oninput="dateMask(this)" placeholder="__/__/____">
+                            </div>
+                        </div>
+                        <div class="container__col-12">
+                            <div class="form-group-button">
+                                <button type="submit" id="submit-button" class="btn green-purple">ENVIAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="list">
+        <div class="container">
+            <div class="container__row">
+                <div class="container__col-12">
+                    <h1 class="text-40 font-regular">Lista de Cadastrados</h1>
+                </div>
+            </div>
+            <div class="container__row">
+                <div class="container__col-12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>CPF</th>
+                                <th>Email</th>
+                                <th>Genero</th>
+                                <th>Status</th>
+                                <th>Data de Nascimento</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Felipe</td>
+                                <td>416.520.148-02</td>
+                                <td>jardim.felipe@hotmail.com</td>
+                                <td>Masculino</td>
+                                <td>Ativo</td>
+                                <td>13/08/1993</td>
+                                <td><a href="#" title="Excluir" onclick="removeCell(this)" class="delete-button"><i class="fas fa-times"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+
+</body>
+</html>

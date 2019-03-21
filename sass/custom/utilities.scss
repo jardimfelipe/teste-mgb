@@ -1,0 +1,36 @@
+body {
+	font-family: "Din", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.list {
+	padding-bottom: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+	border: none;
+	cursor: pointer;
+	font-weight: 700;
+	// font-family: "Din";
+}
+
+$fontes: (
+	black: 900,
+	bold: 800,
+	regular: 700,
+	medium: 600,
+	light: 500
+	);
+
+@each $fonte, $letras in $fontes {
+	.font-#{$fonte} {
+		font-weight: $letras;
+	}
+}
